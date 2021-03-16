@@ -57,7 +57,7 @@
                                     {$MOD.LBL_MAIN_TITLE}:
                                 </div>
                                 <div class="col-xs-12 col-sm-8 edit-view-field " type="module_list" field="module_list">
-                                    <select name="module_list" id="module_list" multiple class="selectpicker" data-live-search="true">
+                                    <select name="module_list[]" id="module_list" multiple class="selectpicker" data-live-search="true">
                                         {$select_list}
                                     </select>
                                 </div>
@@ -82,8 +82,8 @@
     </script>
     <!-- to be used for id for buttons with custom code in def files-->
     <div class="buttons">
-        <input title="Save" accesskey="a" class="button primary" onclick="var _form = document.getElementById('EditView'); _form.action.value='Save'; if(check_form('EditView'))SUGAR.ajaxUI.submitForm(_form);return false;" type="submit" name="button" value="Save" id="SAVE">
-        <input title="Cancel [Alt+l]" accesskey="l" class="button" onclick="SUGAR.ajaxUI.loadContent('index.php?action=index&amp;module=Accounts'); return false;" type="button" name="button" value="Cancel" id="CANCEL">
+        <input title="Save" accesskey="a" class="button primary" onclick="var _form = document.getElementById('EditView'); _form.action.value='save_list'; if(check_form('EditView'))SUGAR.ajaxUI.submitForm(_form);return false;" type="submit" name="button" value="Save" id="SAVE">
+        <input title="Cancel [Alt+l]" accesskey="l" class="button" onclick="SUGAR.ajaxUI.loadContent('index.php?action=index&amp;module=MBL_MODULE_PUBLIC_LIST'); return false;" type="button" name="button" value="Cancel" id="CANCEL">
     </div>
 </form>
 {/literal}
