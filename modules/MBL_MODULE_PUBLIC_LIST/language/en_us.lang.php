@@ -76,5 +76,5 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'New Modules for phone',
   'Module name' => 'module name',
   'LBL_MAIN_PANEL_NAME' => 'Main panel',
-  'LBL_MAIN_TITLE' => 'Выберете модули для отобрашения в мобильном приложении',
+  'LBL_MAIN_TITLE' => 'Select the application to display in the new application ',
 );
