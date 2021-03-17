@@ -13,7 +13,7 @@ class MBL_MODULE_PUBLIC_LISTViewList extends ViewList
         $ss = new Sugar_Smarty();
         $sql = "SELECT *
                 From {$this->bean->table_name}
-                WHERE `deleted = '0'`";
+                WHERE `deleted` = '0'";
         $result = $this->bean->db->query($sql,1);
         $show_modules = [];
         while ($row = $this->bean->db->fetchByAssoc($result)) {

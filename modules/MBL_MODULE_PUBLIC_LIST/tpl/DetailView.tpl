@@ -45,7 +45,9 @@
                 <li><input title="Find Duplicates" class="button" onclick="var _form = document.getElementById('formDetailView'); _form.return_module.value='Accounts'; _form.return_action.value='DetailView'; _form.return_id.value='162bbc44-79cd-b16e-b306-604dfffa24a9'; _form.action.value='Step1'; _form.module.value='MergeRecords';SUGAR.ajaxUI.submitForm(_form);" type="button" name="Merge" value="Find Duplicates" id="merge_duplicate_button"> </li>
                 <li><input class="button hidden" id="send_confirm_opt_in_email" title="Send Confirm Opt In Email" onclick="var _form = document.getElementById('formDetailView');_form.return_module.value='Accounts'; _form.return_action.value='DetailView'; _form.return_id.value='162bbc44-79cd-b16e-b306-604dfffa24a9'; _form.action.value='sendConfirmOptInEmail'; _form.module.value='Accounts'; _form.module_tab.value='Accounts';_form.submit();" name="send_confirm_opt_in_email" disabled="1" type="button" value="Send Confirm Opt In Email"></li>
                 <li><input type="button" class="button" onclick="showPopup();" value="Print as PDF"></li>
+                {literal}
                 <li><input id="btn_view_change_log" title="View Change Log" class="button" onclick="open_popup(&quot;Audit&quot;, &quot;600&quot;, &quot;400&quot;, &quot;&amp;record=162bbc44-79cd-b16e-b306-604dfffa24a9&amp;module_name=Accounts&quot;, true, false,  { &quot;call_back_function&quot;:&quot;set_return&quot;,&quot;form_name&quot;:&quot;EditView&quot;,&quot;field_to_name_array&quot;:[] } ); return false;" type="button" value="View Change Log"></li>
+                {/literal}
             </ul>        </li>
         <li class="tab-inline-pagination">
         </li>
