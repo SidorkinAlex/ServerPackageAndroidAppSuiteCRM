@@ -20,6 +20,7 @@ class MBL_MODULE_PUBLIC_LISTViewList extends ViewList
             $row['module_name_lbl'] = $app_list_strings['moduleList'][$row['module_name']];
             $show_modules[] = $row;
         }
+
         $ss->assign('MODULES_LIST',$show_modules );
         echo $ss->fetch('modules/MBL_MODULE_PUBLIC_LIST/tpl/DetailView.tpl');
 

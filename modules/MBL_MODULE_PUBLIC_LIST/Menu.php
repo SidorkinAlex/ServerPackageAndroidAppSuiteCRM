@@ -45,7 +45,7 @@
 global $mod_strings, $app_strings, $sugar_config;
  
 if(ACLController::checkAccess('MBL_MODULE_PUBLIC_LIST', 'edit', true)){
-    $module_menu[]=array('index.php?module=MBL_MODULE_PUBLIC_LIST&action=EditView&return_module=MBL_MODULE_PUBLIC_LIST&return_action=DetailView', $mod_strings['LNK_NEW_RECORD'], 'Add', 'MBL_MODULE_PUBLIC_LIST');
+    $module_menu[]=array('index.php?module=MBL_MODULE_PUBLIC_LIST&action=EditView&return_module=MBL_MODULE_PUBLIC_LIST', $mod_strings['LBL_NEW_FORM_TITLE'], 'Add', 'MBL_MODULE_PUBLIC_LIST');
 }
 if(ACLController::checkAccess('MBL_MODULE_PUBLIC_LIST', 'list', true)){
     $module_menu[]=array('index.php?module=MBL_MODULE_PUBLIC_LIST&action=index&return_module=MBL_MODULE_PUBLIC_LIST&return_action=DetailView', $mod_strings['LNK_LIST'],'View', 'MBL_MODULE_PUBLIC_LIST');
